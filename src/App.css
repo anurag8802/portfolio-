@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(6, 1, 61);
+}
+:root {
+  --bgcolor: rgb(4, 127, 208);
+  --gradient: linear-gradient(45deg, rgb(32, 246, 171), rgb(0, 242, 255), #145fe1);
+  --clr: #e13314;
+  --gradient-two:linear-gradient(45deg,lime,aquamarine);
+}
+
+body {
+  font-family: monospace;
+}
+.App{
+    scroll-snap-type:y mandatory;
+    overflow-y: scroll;
+    max-height: 100vh;
+}
+.home-section-app{
+  scroll-snap-align: start;
+}
+.about-section-app{
+  scroll-snap-align: start;
+}
+.skills-section-app{
+  scroll-snap-align:center;
+}
+.projects-section-app{
+  scroll-snap-align: start;
+}
+.contact-section-app{
+  scroll-snap-align: start;
+}

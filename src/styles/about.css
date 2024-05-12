@@ -1,0 +1,322 @@
+.about{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    max-height: calc(100%);
+    flex-direction: column;
+    height: 100vh;
+    /* background-image: radial-gradient(rgba(193, 212, 224, 0.8), rgb(83, 85, 255)); */
+    /* background-image: linear-gradient(45deg,lime,red); */
+    background-image: url("../images/mathsAndCode.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-snap-align: start;
+    position: relative;
+}
+.about *{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.about-main{
+    width: clamp(50%,85vw,90%);
+    height: 70%;
+    background-color: rgba(255, 255, 255, 0.614);
+    /* padding: 1rem; */
+    border-radius: 1rem;
+    /* outline: .1em solid rgb(26, 255, 0); */
+    /* outline: .1em solid rgba(57, 57, 57, 0.25); */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: .2em .2em 2.5em rgb(49, 49, 49);
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: all 250ms ease;
+}
+.about-main .macOs-header{
+    width: auto;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    outline: .1em solid rgb(57, 57, 57);
+    height: 9%;
+    background-color: rgb(57, 57, 57);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: .4rem;
+    /* z-index: 2; */
+}
+.about-main .macOs-header .about-title{
+    width: 25%;
+    background-color: rgba(111, 111, 111, 0.85);
+    text-align: center;
+    padding: .3rem;
+    border: .1em solid rgba(255, 255, 255, 0.737);
+    border-radius: .4em;
+    margin: auto;
+    font-size: 1.3rem;
+}
+.about-main .macOs-header .header-btns{
+    display: flex;
+    gap: .5rem;
+    margin: 1.3rem;
+}
+.about-main .macOs-header .header-btns .close{
+    display: block;
+    height: 0.9rem;
+    width: 0.9rem;
+    background-color: rgb(252, 63, 63);
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+.about-main .macOs-header .header-btns:hover .close::before{
+    content: "+";
+    position: absolute;
+    left: 22.5%;
+    top: -20%;
+    transform: rotate(45deg);
+    display: block;
+    color: black;
+    scale: 1.2;
+}
+.about-main .macOs-header .header-btns .minimise{
+    display: block;
+    height: 0.9rem;
+    width: 0.9rem;
+    background-color: rgb(255, 242, 0);
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+.about-main .macOs-header .header-btns:hover .minimise::before{
+    content: "-";
+    position: absolute;
+    left: 22.5%;
+    top: -22.5%;
+    display: block;
+    color: black;
+    scale: 1.2;
+}
+.about-main .macOs-header .header-btns .expand{
+    display: block;
+    height: 0.9rem;
+    width: 0.9rem;
+    background-color: rgb(225, 225, 225);
+    border-radius: 50%;
+    position: relative;
+}
+.about-main .about-content{
+    display: flex;
+    height: 91%;
+    width: 100%;
+    flex-direction: row;
+}
+@media (width<730px) {
+    .about-main{
+        width: 90%;
+    }
+    .about-main .about-content .about-navigation .profile .profile-pic{
+        width: 100%;
+    }
+}
+.about-main .about-content .about-navigation{
+    /* border: 1px solid; */
+    font-size: 1rem;
+    border-right: 1px solid rgb(255 255 255 / 45%);
+    padding: .5rem;
+    text-align: center;
+    width: 40%;
+}
+.about-main .about-content .about-navigation ul{
+    width: 100%;
+    /* font-weight: 500; */
+    font-size: medium;
+    list-style: none;
+    /* padding: .5rem; */
+}
+.about-main .about-content .about-navigation li{
+    /* border: 1px solid; */
+    /* background-color: rgba(255, 255, 255, .1); */
+    width: 100%;
+    padding: .3rem 0;
+}
+.about-main .about-content .about-navigation li a{
+    text-decoration: none;
+    color: black;
+    padding: .25rem 0;
+    display: block;
+    width: 100%;
+    border-radius: .5rem;
+}
+.about-main .about-content .about-navigation h2{
+    margin-bottom:3rem;
+    margin-top:2rem;
+    font-size : 1.5rem;
+}
+.about-main .about-content .about-navigation li a.active{
+    background-color: rgb(0, 89, 255);
+    color: white;
+}
+.about-main .about-content .my-text{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    background-color: #faf2e9a7;
+    border-bottom-right-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: .2em; */
+}
+.about-main .about-content .my-text .frame{
+    overflow: hidden;
+    height: 60%;
+    background-color: #dbd4cb4a;
+    display: block;
+    width: 95%;
+    border: .125em solid #b9b3aa4a;
+    border-radius: .3em;
+}
+.about-main .about-content .my-text .frame #overview{
+    height: 100%;
+    display: block;
+    padding: 1rem;
+}
+.about-main .about-content .my-text .frame #hobbies{
+    padding: 1rem;
+    height: 100%;
+    display: block;
+}
+.about-main .about-content .my-text .frame #hobbies ul{
+    list-style:none;
+}
+.about-main .about-content .my-text .frame #hobbies ul li{
+    margin: .5em 0;
+    padding: .1em;
+    line-height: 1.5rem;
+}
+.about-main .about-content .my-text .frame #hobbies ul li span span{
+    font-size:1.25em;
+}
+.about-main .about-content .my-text .frame #achievements{
+    display: block;
+    padding: 1rem;
+    height: 100%;
+}
+.about-main .about-content .my-text .frame #achievements ul{
+    list-style: none;
+}
+.about-main .about-content .my-text .frame #achievements ul li{
+    margin: .75em 0;
+    padding: .1em;
+    line-height: 1.5rem;
+}
+.about-main .about-content .my-text .frame #achievements ul li .timestamp{
+    padding: .25em;
+    border-radius: .15em;
+    background-color: rgb(0, 169, 101);
+    /*rgb(0, 169, 101)*/
+}
+.about-main .about-content .my-text .frame .about-overviews p{
+    margin: .3rem 0;
+}
+.about-main .about-content .about-navigation .profile{
+    /* border: 1px solid; */
+    margin-bottom: 1em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about-main .about-content .about-navigation .profile .profile-pic{
+    opacity: .85;
+}
+.about .application{
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    width: 4em;
+    text-align: center;
+    color: rgb(248, 248, 248);
+    cursor: pointer;
+}
+.about .application img{
+    border-radius: .5em;
+}
+.about .about-footer{
+    color: white;
+    /* display: block; */
+    width: clamp(40%,85%,90%);
+    display: flex;
+    justify-content: center;
+    margin-inline: auto;
+    margin-bottom: .2em;
+    background: #ffffff4d;
+    height: 3.5em;
+    align-items: center;
+    border-radius: .5em;
+    border: .05em solid rgba(255, 255, 255, 0.512);
+    backdrop-filter: blur(.5em);
+    position: absolute;
+    bottom: 0;
+    left: clamp(5%,7%,10%);
+}
+.about .about-footer .main-dock-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.about .about-footer .about-footer-icons{
+    /* padding: .3em; */
+    text-align: center;
+    /* display: block; */
+    width: 14.2%;
+    cursor:not-allowed;
+    opacity: 0.75;
+}
+.about .about-footer .chrome-dotted{
+    position: relative;
+}
+.about .about-footer .profile-in-dock{
+    display: none;
+    opacity: 1;
+    cursor: pointer;
+}
+.about .about-footer .about-footer-icons img{
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+hr{
+    border-color: #b9b6b236;
+}
+@media (width<=414px) {
+    .about .about-footer .about-footer-icons{
+        /* width: 3em; */
+        height: 1.5em;
+        /* text-align: center; */
+        display: flex;
+        justify-content: center;
+    }
+    .about .about-footer .profile-in-dock{
+        display: none;
+    }
+    .about .about-footer .profile-in-dock{
+        margin-left: .25em;
+    }
+    .about .about-footer .about-footer-icons img{
+        width: 60%;
+        margin-inline: 0;
+    }
+    .about .about-main .about-content #overview{
+        overflow: scroll;
+    }
+    .about .about-main .about-content #hobbies{
+        overflow: scroll;
+    }
+    .about .about-main .about-content #achievements{
+        overflow: scroll;
+    }
+}

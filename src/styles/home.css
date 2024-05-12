@@ -1,0 +1,261 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.base {
+    position: relative;
+    width: 100%;
+    height: calc(100%);
+}
+.position{
+    position: relative;
+    width: 100vw;
+    height: 100%;
+    top: 5%;
+    left: 20%;
+    z-index: 1;
+}
+.viewbox{
+    position: absolute;
+    top: 5.75rem;
+    left: 30%;
+    background-image: url("../images/worldmap.jpeg");
+    background-size: 230%;
+    height: 39rem;
+    width: 39.5rem;
+    transform: rotate(23.5deg);
+    display: block;
+    border-radius: 100%;
+    border-top-left-radius: 90%;
+    border-top-right-radius: 93%;
+    border-bottom-right-radius: 90%;
+    background-repeat:repeat-x;
+    animation: rotate 20s linear infinite;
+    -webkit-mask: radial-gradient(farthest-side,#000 93.5%,transparent);
+    mask: radial-gradient(farthest-side,#000 93.5%,transparent);
+
+    /* filter: drop-shadow(.5rem .5rem 6rem rgb(249, 239, 188)); */
+    ;
+}
+.gradient{
+    position: absolute;
+    top: 5rem;
+    left: 30%;
+    background-image: linear-gradient(45deg,black,transparent 60%,rgba(255, 255, 255, 1) 99%);
+    background-size: 130%;
+    background-position: left;
+    height: 40rem;
+    width: 40rem;
+    display: block;
+    border-radius: 100%;    
+    box-shadow: inset 0.05rem -0.025rem .5rem rgba(192, 96, 1, 0.662);
+    transform: rotate(23.5deg);
+
+}
+.viewbox-2{
+    position: absolute;
+    top: 5rem;
+    left: 30%;
+    background-image: url("../images/realMapEarth.jpeg");
+    background-size: 230%;
+    height: 40rem;
+    width: 40rem;
+    display: block;
+    border-radius: 100%;
+    transform:rotate(23.5deg);
+    background-repeat:repeat-x;
+    z-index: -1;
+    animation: rotate 20s linear infinite;
+    box-shadow: inset -.25rem .25rem 1.75rem rgb(250, 242, 196),
+    .25rem -.5rem 2rem rgb(109, 159, 253),
+    .35rem -.5rem 1.5rem rgb(255, 226, 108),
+    -.25rem .25rem 1rem rgb(110, 54, 2),
+    inset .25rem -.25rem .5rem rgb(110, 54, 2),
+    inset 1rem 0rem 4rem black;
+}
+@media (width>=1200px) {
+    .position{
+        height: 88.5vh;
+    }
+}
+@keyframes rotate {
+    0%{
+        background-position: -50%;
+    }
+    100%{
+        background-position: 127%;
+    }
+}
+.base p#name {
+    font-size: 4em;
+    position: absolute;
+    text-align: center;
+    /* width: auto; */
+    top: 9rem;
+    left: 10vw;
+    right: auto;
+    margin-inline: auto;
+    font-weight: bold;
+    background-image: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 100%;
+    background-position: right;
+    animation: name-anime 4s ease-in-out infinite alternate;
+}
+
+.base p#intro-para {
+    font-size: 23px;
+    position: absolute;
+    top: 14rem;
+    width: 45%;
+    text-align: center;
+    left: 1.8rem;
+    color: #fff;
+    z-index: 1;
+}
+
+.intro-cont {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-repeat: round;
+    background-blend-mode: saturation;
+    background-color: rgba(0, 0, 0, .3);
+    position: relative;
+    background-image: url("../images/stars.png");
+    overflow: hidden;
+}
+.satellite{
+    background:none;
+    position: absolute;
+    left:-10%;
+    transform: scale(.85) rotate(-5deg);
+    animation: bounce 2.5s ease infinite alternate;
+}
+@keyframes bounce {
+    0%{
+        top: 40%;
+    }
+    100%{
+        top: 45%;
+    }
+}
+.intro-cont::after {
+    content: '';
+    position: absolute;
+    top: 35em;
+    display: block;
+    height: 28em;
+    width: 100vw;
+    /* background-image: url("../images/Union.svg");
+    background-repeat: round; */
+}
+
+
+.logo-img {
+    position: absolute;
+    width: 30%;
+    height: 40%;
+    left: 40%;
+    top: 30%;
+    mix-blend-mode: normal;
+    z-index: 0;
+    animation: logo-bounce 2s ease-in-out 0s infinite alternate none;
+}
+@media (width<=500px) {
+    .base p#name{
+        top: 5rem;
+        font-size: 3.5rem;
+    }
+    .base p#intro-para{
+        left: 0;
+        width: 100%;
+        font-size: 1.4em;
+        padding: .25em;
+    }
+    .logo-img{
+        transform: scale(1.9);
+        left: 30%;
+        width: 40%;
+        top: 35%;
+    }
+    .position{
+        top: 40%;
+        left: clamp(0%,5%,7%);
+    }
+    .viewbox{
+        height: 24rem;
+        width: 24rem;
+    }
+    .viewbox-2{
+        height: 25rem;
+        width: 25rem;   
+    }
+    .gradient{
+        height: 25rem;
+        width: 25rem;
+    }
+    .satellite{
+        left: clamp(-40%,-35%,20%);
+        transform: scale(.5);
+        z-index: 1;
+    }
+    @keyframes bounce {
+        from{
+            top: 30%;
+        }
+        to{
+            top:38%;
+        }
+    }
+}
+@media (1000px>width>500px) {
+    .base p#name{
+        top: 8rem;
+        left: 12vw;
+        font-size: 3.5rem;
+    }
+    .base p#intro-para{
+        left: clamp(2%,5%,7%);
+        width: clamp(50%,60%,70%);
+        font-size: 1.5em;
+    }
+    .logo-img{
+        transform: scale(1.9);
+        left: 30%;
+        width: 40%;
+        top: 35%;
+    }
+    .position{
+        top: 30%;
+        left: clamp(5%,8%,10%);
+    }
+    .viewbox{
+        height: 34rem;
+        width: 34rem;
+    }
+    .viewbox-2{
+        height: 35rem;
+        width: 35rem;   
+    }
+    .gradient{
+        height: 35rem;
+        width: 35rem;
+    }
+    .satellite{
+        left: clamp(-20%,-15%,0%);
+        transform: scale(.55);
+        z-index: 1;
+    }
+    @keyframes bounce {
+        from{
+            top: 25%;
+        }
+        to{
+            top:35%;
+        }
+    }
+}

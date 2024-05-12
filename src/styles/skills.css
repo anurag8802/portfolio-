@@ -1,0 +1,209 @@
+.skills {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.main-skills {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "web . tools"
+        "web title tools"
+        "lang title ."
+        "lang . ."
+    ;
+    background-image: linear-gradient(135deg, violet, blueviolet, blue);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.webd-title {
+    /* font-size: large; */
+    margin-bottom: .5rem;
+}
+
+.tools-title {
+    /* font-size: large; */
+    margin-bottom: .5rem;
+}
+
+.lang-title {
+    /* font-size: large; */
+    margin-bottom: .5rem;
+}
+
+.webdev {
+    grid-area: web;
+    width: 10rem;
+    aspect-ratio: 1;
+    border-radius: 30%;
+    box-shadow: 1px 1px 10px black;
+    background-image: linear-gradient(-60deg, lime, cyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0 5em auto;
+    font-size: large;
+    /* padding: 1rem; */
+}
+.tools {
+    grid-area: tools;
+    width: 10rem;
+    aspect-ratio: 1;
+    border-radius: 30%;
+    box-shadow: 1px 1px 10px black;
+    background-image: linear-gradient(80deg, lightblue, aqua);
+    font-size: large;
+    display: flex;
+    /* padding: 1rem; */
+    align-items: center;
+    justify-content: center;
+    margin: auto auto 5em 0;
+}
+
+.languages {
+    grid-area: lang;
+    width: 10rem;
+    aspect-ratio: 1;
+    border-radius: 30%;
+    /* padding: 1rem; */
+    background-color: whitesmoke;
+    background-image: linear-gradient(-60deg, orange, pink);
+    font-size: large;
+    box-shadow: 1px 1px 10px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5em 0 auto auto;
+}
+
+.skill-icon {
+    margin: auto;
+}
+
+.skills-title {
+    width: 12rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 10px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: title;
+    margin: auto;
+}
+
+.skills-front {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    /* display: none; */
+    top: 0;
+    left: 0;
+    background: black;
+    -webkit-mask:
+        radial-gradient(circle closest-side at 50% 50%, #000 98%, #0000) 15rem 15rem no-repeat,
+        linear-gradient(#000 0 0);
+    -webkit-mask-composite: destination-out;
+
+    mask:
+        radial-gradient(circle closest-side at 50% 50%, #000 98%, #0000) center/15rem 15rem no-repeat,
+        linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    /* transition: 0.1s; */
+}
+
+@media (width>=675px) {
+    .webdev {
+        width: 15rem;
+        aspect-ratio: 1;
+    }
+
+    .tools {
+        width: 15rem;
+        aspect-ratio: 1;
+    }
+
+    .languages {
+        width: 15rem;
+        aspect-ratio: 1;
+    }
+}
+
+@media (390px<=width<=550px) {
+    .main-skills {
+        grid-template-areas:
+            "web tools"
+            "title title"
+            "lang ."
+        ;
+    }
+    .webdev {
+        width: 12rem;
+        aspect-ratio: 1;
+        overflow: scroll;
+        border-radius: 10%;
+        margin: auto auto 0 auto;
+    }
+    .skills-title{
+        width: 10rem;
+        aspect-ratio: 1;
+    }
+    .tools {
+        width: 12rem;
+        aspect-ratio: 1;
+        border-radius: 10%;
+        margin: auto auto 0 auto;
+    }
+    
+    .languages {
+        width: 12rem;
+        border-radius: 10%;
+        aspect-ratio: 1;
+        margin: 0 auto auto auto;
+    }
+}
+@media (width<390px) {
+    .main-skills {
+        grid-template-areas:
+            "web web"
+            "title title"
+            "lang tools"
+        ;
+    }
+    .webdev{
+        width: 62.5%;
+        border-radius: 10%;
+        height: 11.5rem;
+        text-align: center;
+        margin: auto auto 0 auto;
+    }
+    .tools{
+        border-radius: 10%;
+        width:80%;
+        height: 8rem;
+        margin: 0 auto 0 auto;
+    }
+    .languages{
+        border-radius: 10%;
+        width:80%;
+        height: 8rem;
+        margin: 0 auto 0 auto;
+    }
+    .skills-title{
+        width: 10rem;
+    }
+    .skills-front{
+        -webkit-mask:
+        radial-gradient(circle closest-side at 50% 61%, #000 98%, #0000) center/15rem 15rem no-repeat,
+        linear-gradient(#000 0 0);
+        -webkit-mask-composite: destinatio-out;
+        mask: 
+        radial-gradient(circle closest-side at 50% 61%, #000 98%, #0000) center/15rem 15rem no-repeat,
+        linear-gradient(#000 0 0);
+        mask-composite: exclude;
+    }
+}
