@@ -20,12 +20,12 @@ const MainSection = () => {
                             <div className="satellite">
                                 <img src={satellite} className="satellite" alt="" />
                             </div>
-                            <p id="name">ADITYA MISHRA</p>
+                            <p id="name">ANURAG JHA</p>
                             <p id="intro-para">
-                                Hi, I am Aditya Mishra,<br />
-                                Full Stack Web Developer and a 3rd yr student majoring in
-                                Mathematics and
-                                Computer Science</p>
+                                Hii! I am Anurag Jha,<br />
+                                A 3rd yr student majoring in
+                                Electronics and
+                                Commnication Engineering</p>
                             {/* <img className="logo-img pballs" data-speed="0.71" src={logo} alt="" /> */}
                         </div>
                     </div>

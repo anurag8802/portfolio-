@@ -53,8 +53,8 @@ const About = () => {
                         <div className="about-navigation">
                             <h2 className="navigation-heading">About Me</h2>
                             <div className="profile">
-                                <img src={photo} alt="aditya mishra" className="profile-pic" width={"25%"}/>
-                                <h4>Aditya Mishra</h4>
+                                <img src={photo} alt="Anurag-Jha" className="profile-pic" width={"25%"}/>
+                                <h4>Anurag Jha</h4>
                             </div>
                             <hr style={{ borderColor: "#b9b3aa4a" }} />
                             <ul className='about-elements'>
@@ -99,21 +99,21 @@ const About = () => {
                                     <h3 style={{ textAlign: 'center', margin: ".3em 0" }}>Overview</h3>
                                     <hr style={{ borderColor: "#b9b3aa4a" }} />
                                     <p>
-                                        Hello, I am Aditya Mishra , 🙋‍♂️. I am a sophomore at Delhi Technological University, Delhi. Right now I am pursuing a 🎓 degree of bachelor's of technology in Mathematics and Computing Engineering.
+                                        Hello, I am Anurag Jha , 🙋‍♂️. I am a sophomore at Netaji Subhash University Of Technology, Delhi. Right now I am pursuing a 🎓 degree of bachelor's of technology in Electronics and Commnication Engineering.
                                     </p>
                                 </div>
                                 <div id="hobbies" className='about-overviews'>
                                     <h3 style={{ textAlign: 'center', margin: ".3em 0" }}>Hobbies</h3>
                                     <hr/>
                                     <ul>
-                                        <li><span>I love to play Football <span>⚽️</span></span>
+                                        <li><span>I love to play Cricket <span>⚽️</span></span>
                                         </li>
                                         <hr/>
                                         <li><span>Sometimes I play chess as well <span> ♔♚</span></span></li>
                                         <hr />
                                         <li><span>I watch memes in my free time <span className='memes'>🤣</span></span></li>
                                         <hr/>
-                                        <li><span>I watch movies as well,RRR,my favourite <span className='movies'>🐎 🏍️</span></span></li>
+                                        <li><span>I watch webseries <span className='movies'>🐎 🏍️</span></span></li>
 
                                     </ul>
                                 </div>
@@ -121,11 +121,11 @@ const About = () => {
                                     <h3 style={{ textAlign: 'center', margin: ".3em 0" }}>Achievements</h3>
                                     <hr style={{ borderColor: "#b9b6b236" ,marginBottom:".75em"}} />
                                     <ul>
-                                        <li><span className='timestamp'>Feb - 2023</span> || I was selected as a webdev intern in the Univerity Students Internship Program (USIP) DTU</li>
+                                        <li><span className='timestamp'>2021-2024</span> || Solved 450++ Problems on LeetCode.</li>
                                         <hr />
-                                        <li><span className='timestamp'>Jan - 2023</span> || I got an opportunity to become a technical head at Mathematics and Computing Society-DTU</li>
+                                        <li><span className='timestamp'>2021-2024</span> || Solved 800++ problems on other platforms i.e. codestudio , GFG ,interviewbit.</li>
                                         <hr />
-                                        <li><span className='timestamp'>Dec - 2021</span> || I was among the top 10% students to qualify for the IIT Entrance Exam (JEE Adv)</li>
+                                        <li><span className='timestamp'>June - 2023</span> || Got AIR-8391 in CodeKaze June 23’ organized by coding ninjas.</li>
                                     </ul>
                                 </div>
                             </div>

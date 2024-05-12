@@ -8,9 +8,9 @@ body{
 }
 :root {
   --bgcolor: rgb(4, 127, 208);
-  --gradient: linear-gradient(45deg, rgb(32, 246, 171), rgb(0, 242, 255), #145fe1);
-  --clr: #e13314;
-  --gradient-two:linear-gradient(45deg,lime,aquamarine);
+  --gradient: linear-gradient(45deg, rgb(9, 57, 40), rgb(12, 55, 57), #0a2e6c);
+  --clr: #5e261c;
+  --gradient-two:linear-gradient(45deg,rgb(36, 69, 36),rgb(41, 69, 59));
 }
 
 body {
