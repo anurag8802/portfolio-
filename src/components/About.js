@@ -106,12 +106,12 @@ const About = () => {
                                     <h3 style={{ textAlign: 'center', margin: ".3em 0" }}>Hobbies</h3>
                                     <hr/>
                                     <ul>
-                                        <li><span>I love to play Cricket <span>⚽️</span></span>
+                                        <li><span>I love to play Cricket <span>🏏</span></span>
                                         </li>
                                         <hr/>
                                         <li><span>Sometimes I play chess as well <span> ♔♚</span></span></li>
                                         <hr />
-                                        <li><span>I watch memes in my free time <span className='memes'>🤣</span></span></li>
+                                        <li><span>I Love to Explore new things. <span className='explore'></span></span></li>
                                         <hr/>
                                         <li><span>I watch webseries <span className='movies'>🐎 🏍️</span></span></li>
 
@@ -124,6 +124,8 @@ const About = () => {
                                         <li><span className='timestamp'>2021-2024</span> || Solved 450++ Problems on LeetCode.</li>
                                         <hr />
                                         <li><span className='timestamp'>2021-2024</span> || Solved 800++ problems on other platforms i.e. codestudio , GFG ,interviewbit.</li>
+                                        <hr />
+                                        <li><span className='timestamp'>2021-2024</span> || Top 24.44 % on Leetcode.</li>
                                         <hr />
                                         <li><span className='timestamp'>June - 2023</span> || Got AIR-8391 in CodeKaze June 23’ organized by coding ninjas.</li>
                                     </ul>
