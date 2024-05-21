@@ -16,6 +16,13 @@ const projs = [
         img:images.decyber
     },
     {
+        title:"PORTFOLIO OLDONE",
+        desc:"My first made PORTFOLIO by using CSS,HTML,JAVASCRIPT ",
+        github:"https://github.com/anurag8802/Music-streaming-",
+        live:"https://amazing-hummingbird-aa7bad.netlify.app/",
+        img:images.textutils
+    },
+    {
         title:"Amazon-clone",
         desc:" It is a replica of the Amazon e-commerce website using HTML and CSS, focusing on the front-end design and user interface.",
         github:"https://github.com/anurag8802/amazon-clone",
