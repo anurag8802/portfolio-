@@ -2,6 +2,13 @@ import images from "./images/index"
 
 const projs = [
     {
+        title:"NETFLIX-CLONE",
+        desc:" Developed a full-stack Netflix clone application that allows users to browse, search, and stream movies and TVshows.",
+        github:"https://github.com/anurag8802/clone",
+        live:"https://illustrious-faun-a1118c.netlify.app/",
+        img:images.notesman
+    },
+    {
         title:"Weather Apps",
         desc:"WeatherGuide provides you the current weather and 8-day daily weather forecast data with a comfortable and minimalistic UI",
         github:"https://github.com/anurag8802/Weather-App2.0",
@@ -18,7 +25,7 @@ const projs = [
     {
         title:"PORTFOLIO OLDONE",
         desc:"My first made PORTFOLIO by using CSS,HTML,JAVASCRIPT ",
-        github:"https://github.com/anurag8802/Music-streaming-",
+        github:"/",
         live:"https://amazing-hummingbird-aa7bad.netlify.app/",
         img:images.textutils
     },
