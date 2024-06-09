@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio-/static/css/main.bd0a1440.css",
-    "main.js": "/portfolio-/static/js/main.e1d40c09.js",
+    "main.js": "/portfolio-/static/js/main.5a20e097.js",
+    "static/media/notesman.png": "/portfolio-/static/media/notesman.1ce3f584985e3c23172e.png",
     "static/media/newskabutar.png": "/portfolio-/static/media/newskabutar.22ddf15698875a2b0767.png",
     "static/media/weatherguide-portfolio.png": "/portfolio-/static/media/weatherguide-portfolio.4d0f16fd2af0ada63e5f.png",
     "static/media/mymaploc.png": "/portfolio-/static/media/mymaploc.0f14e1685920e920be1c.png",
@@ -9,12 +10,11 @@
     "static/media/worldmap.jpeg": "/portfolio-/static/media/worldmap.1cd8b3e0d6e07aa90ec1.jpeg",
     "static/media/stars.png": "/portfolio-/static/media/stars.f3f983b0a849414cf0ec.png",
     "static/media/tagit.png": "/portfolio-/static/media/tagit.8ec82cbc67e9d43d77bd.png",
+    "static/media/textutils.png": "/portfolio-/static/media/textutils.3fc05bac6dace3dd6058.png",
     "static/media/realMapEarth.jpeg": "/portfolio-/static/media/realMapEarth.5c2929298c436e2cb5c2.jpeg",
     "static/media/projects_background.png": "/portfolio-/static/media/projects_background.7660d3ad811e5243392d.png",
     "static/media/satellite.png": "/portfolio-/static/media/satellite.fa2a4251498a99d14d21.png",
     "static/media/mathsAndCode.png": "/portfolio-/static/media/mathsAndCode.d73dd1c68ceabd6a8a62.png",
-    "static/media/notesman.png": "/portfolio-/static/media/notesman.2d4a1d370d546b23eb8a.png",
-    "static/media/textutils.png": "/portfolio-/static/media/textutils.de5a23af94a2fd82618b.png",
     "static/media/meInMetaverse.png": "/portfolio-/static/media/meInMetaverse.d6cce6a63fa4a93510a7.png",
     "static/media/settings.svg": "/portfolio-/static/media/settings.1a38bbca559a1aea8ce8cd1c25a86903.svg",
     "static/media/terminal-icon.svg": "/portfolio-/static/media/terminal-icon.74f63949499cdee8505763f813136e64.svg",
@@ -26,10 +26,10 @@
     "static/media/mail_app.svg": "/portfolio-/static/media/mail_app.f6122940ca1d55212fc8f170c80a7665.svg",
     "static/media/vscode.svg": "/portfolio-/static/media/vscode.feab1f2b5e068c7e1ab02acc59a58f61.svg",
     "main.bd0a1440.css.map": "/portfolio-/static/css/main.bd0a1440.css.map",
-    "main.e1d40c09.js.map": "/portfolio-/static/js/main.e1d40c09.js.map"
+    "main.5a20e097.js.map": "/portfolio-/static/js/main.5a20e097.js.map"
   },
   "entrypoints": [
     "static/css/main.bd0a1440.css",
-    "static/js/main.e1d40c09.js"
+    "static/js/main.5a20e097.js"
   ]
 }
