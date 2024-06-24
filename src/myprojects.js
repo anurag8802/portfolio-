@@ -16,6 +16,13 @@ const projs = [
         img:images.weatherguide
     },
     {
+        title:"Notesman",
+        desc:"A notes website utilizing Node.js with Express and MongoDB for backend storage, featuring user authentication via Google OAuth and CRUD operations for managing personal notes.",
+        github:"https://github.com/anurag8802/notesman",
+        live:"https://notesman.onrender.com/",
+        img:images.newskabutar
+    },
+    {
         title:"Web-Based MUSIC-PLAYER",
         desc:"A user-friendly, web-based music player that allows users to play, pause, skip, and navigate through a playlist of music tracks.",
         github:"https://github.com/anurag8802/Music-streaming-",
